@@ -1,1 +1,113 @@
 @import '~/node_modules/normalize.css/normalize.css';
+@import './mixins.scss';
+@import './functions.scss';
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+
+.root {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(0deg , rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) unit(0.25), transparent unit(0.25), transparent unit(0.5));
+    pointer-events: none;
+  }
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: unit(100);
+}
+
+.data {
+  padding-left: unit(2);
+  padding-right: unit(2);
+  box-sizing: border-box;
+
+  span {
+    cursor: default;
+  }
+}
+
+.main {
+  font-size: unit(10);
+  font-weight: 600;
+  cursor: default;
+}
+
+.secondary {
+  margin-top: unit(3);
+  font-size: unit(5);
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.gray {
+  color: #b3b3b3;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: unit(0.2);
+    height: unit(0.25);
+    background: blue;
+    opacity: 0.4;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

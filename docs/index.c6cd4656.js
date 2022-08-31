@@ -1,0 +1,2 @@
+const t=document.querySelector("canvas").getContext("2d"),e=()=>Math.floor(94*Math.random()+50),a=()=>Math.random()>.5?1:-1,l=t=>{let e=t[3];const a=.01*(30*Math.random()+20)*e;let l=t[2]+a;return l>=50&&l<=144||(l-=2*a,e*=-1),[t[0],t[1],l,e]},n=(()=>{let o=[[0,0,e(),a()],[1,0,e(),a()],[0,1,e(),a()],[1,1,e(),a()]];return()=>{o=o.map(l),((t,e)=>{t.forEach((t=>((t,e)=>{const[a,l,n]=t;e.fillStyle=`hsl(${n}, 50%, 40%)`,e.fillRect(a,l,1,1),e.fillRect(a,l,1,1)})(t,e)))})(o,t),requestAnimationFrame(n)}})();n();
+//# sourceMappingURL=index.c6cd4656.js.map
