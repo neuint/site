@@ -56,6 +56,7 @@ canvas {
   padding-left: unit(2);
   padding-right: unit(2);
   box-sizing: border-box;
+  position: relative;
 
   span {
     cursor: default;
@@ -63,9 +64,20 @@ canvas {
 }
 
 .main {
+  display: flex;
   font-size: unit(10);
   font-weight: 600;
   cursor: default;
+  align-items: center;
+}
+
+.logo {
+  width: unit(13);
+  height: unit(13);
+}
+
+.logo_text {
+  margin-left: unit(3);
 }
 
 .secondary {
