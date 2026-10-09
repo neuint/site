@@ -1,0 +1,2 @@
+let t,e=document.querySelector("canvas").getContext("2d"),a=()=>Math.floor(64*Math.random()+80),l=()=>Math.random()>.5?1:-1,r=t=>{let e=t[3],a=(30*Math.random()+20)*.01*e,l=t[2]+a;return l>=80&&l<=144||(l-=2*a,e*=-1),[t[0],t[1],l,e]},o=(t=[[0,0,a(),l()],[1,0,a(),l()],[0,1,a(),l()],[1,1,a(),l()]],()=>{var a;a=t=t.map(r),a.forEach(t=>((t,e)=>{let[a,l,r]=t;e.fillStyle=`hsl(${r}, 54%, 20%)`,e.fillRect(a,l,1,1),e.fillRect(a,l,1,1)})(t,e)),requestAnimationFrame(o)});o();
+//# sourceMappingURL=site.8bcf01cc.js.map

@@ -1,2 +1,0 @@
-!function(){const t=document.querySelector("canvas").getContext("2d"),e=()=>Math.floor(94*Math.random()+50),n=()=>Math.random()>.5?1:-1,o=t=>{let e=t[3];const n=.01*(30*Math.random()+20)*e;let o=t[2]+n;return o>=50&&o<=144||(o-=2*n,e*=-1),[t[0],t[1],o,e]},a=(()=>{let l=[[0,0,e(),n()],[1,0,e(),n()],[0,1,e(),n()],[1,1,e(),n()]];return()=>{l=l.map(o),((t,e)=>{t.forEach((t=>((t,e)=>{const[n,o,a]=t;e.fillStyle=`hsl(${a}, 50%, 40%)`,e.fillRect(n,o,1,1),e.fillRect(n,o,1,1)})(t,e)))})(l,t),requestAnimationFrame(a)}})();a()}();
-//# sourceMappingURL=index.87aa58fe.js.map
