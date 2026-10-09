@@ -1,7 +1,7 @@
 const canvas = document.querySelector('canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
 const TOP_HUE = 144;
-const BOTTOM_HUE = 50;
+const BOTTOM_HUE = 80;
 
 type PixelType = [number, number, number, number];
 
@@ -15,7 +15,7 @@ const getRandomDirection = (): number => {
 
 const renderPixel = (pixel: PixelType, context: CanvasRenderingContext2D) => {
   const [x, y, hue] = pixel;
-  context.fillStyle = `hsl(${hue}, 50%, 40%)`;
+  context.fillStyle = `hsl(${hue}, 54%, 20%)`;
   context.fillRect(x, y, 1, 1);
   context.fillRect(x, y, 1, 1);
 };

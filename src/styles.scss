@@ -49,7 +49,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: unit(100);
+  max-width: unit(120);
 }
 
 .data {
@@ -80,9 +80,27 @@ canvas {
   margin-left: unit(3);
 }
 
+@media screen and (max-width: 500px) {
+  .main {
+    font-size: unit(8);
+  }
+
+  .logo {
+    width: unit(9);
+    height: unit(9);
+  }
+}
+
 .secondary {
   margin-top: unit(3);
   font-size: unit(5);
+}
+
+@media screen and (max-width: 500px) {
+  .secondary {
+    margin-top: unit(3);
+    font-size: unit(4);
+  }
 }
 
 .red {
@@ -90,7 +108,7 @@ canvas {
 }
 
 .blue {
-  color: blue;
+  color: #00beff;
 }
 
 .gray {
@@ -113,7 +131,7 @@ canvas {
     left: 0;
     bottom: unit(0.2);
     height: unit(0.25);
-    background: blue;
+    background: #00beff;
     opacity: 0.4;
   }
 

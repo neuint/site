@@ -8,10 +8,10 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.7.0",
-    "parcel": "^2.7.0"
+    "@parcel/transformer-sass": "2.16.4",
+    "parcel": "2.16.4"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "8.0.1"
   }
 }
